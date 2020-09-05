@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row bg-warning sticky-top" style="height: 55px">
+        <div class="col d-flex align-items-center">
+            <h5>Bubble Shooter App</h5>
+        </div>
+        <div style="display: flex;align-items: center;font-size: 22px;font-weight: bold;">Welcome to bubble shooting App
+        </div>
+        <div class="col d-flex justify-content-end align-items-center">
+            <a class="btn btn-outline-light mr-1" routerLink="/home/">Home</a>
+            <a class="btn btn-outline-light mr-1" routerLink="/login" (click)="logoutclose()">Logout</a>
+        </div>
+    </div>
+
+    <div class="row justify-content-center" style=" height: 500px;">
+        <div class="col-3 "></div>
+        <!-- middle section -->
+        <div class="col-6" id="middle">
+
+        </div>
+
+        <div class="col-3">
+            <div class="row" style="height: 30vh;">
+
+            </div>
+
+
+            <div class="row"></div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

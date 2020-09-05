@@ -1,0 +1,31 @@
+<!-- Left bar -->
+<div class="col-6 bg-warning d-flex justify-content-center align-items-center">
+            <img alt="My image name" src="./assets/img/BUBBLESHOOTER_LOGO.png" style="width: 50%;">
+        </div>
+        <!-- Right bar -->
+
+        <div class="col bg-dark d-flex flex-column justify-content-center align-items-center">
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
+
+            <div class="h4 text-light">Application Login</div>
+
+            <div class="mt-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">UserName</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ente User Name">
+                </div>
+            </div>
+
+            <div class="mt-1">
+                <!-- <div class="input-group mb-2"> -->
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Password</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Password">
+                </div>
+                <!-- </div> -->
+                <button class="btn btn-sm btn-warning mt-2 mb-2 btn btn-block">
+                    Login Here
+                </button>
+            </div>

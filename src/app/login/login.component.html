@@ -1,0 +1,52 @@
+<div class="container-fluid">
+
+    <div class="row justify-content-center" style="height:100vh">
+
+        <div class="col-12 col-md-6 d-flex flex-column text-light d-flex justify-content-center align-items-center">
+
+            <!-- Middle section of page -->
+
+            <div class="row d-flex justify-content-center align-items-center" style="height: 35vh">
+
+                <img alt="My image name" src="./assets/img/BUBBLESHOOTER_LOGO.png"
+                    style="width: 70%;height: 70%;margin-top: 30px;">
+
+            </div>
+            <!-- login box -->
+
+            <div class="row d-flex flex-column justify-content-start align-items-center" [formGroup]="fbFormGroup"
+                style="height: 65vh;">
+
+                <div class="h3 text-dark">Application Login</div>
+                <div style="margin-top: 10px;">
+                    <input type="text" placeholder="Enter Username" class="form-control" formControlName="username" />
+                </div>
+
+                <div class="mt-1">
+                    <input type="password" placeholder="Enter Password" class="form-control"
+                        formControlName="password" />
+                </div>
+
+
+                <button style="width: 200px" class="btn btn-dark mt-2 mb-2 btn-block " [disabled]="!fbFormGroup.valid"
+                    (click)="loginProcessHere()">
+                    Login Here
+                </button>
+
+                <div style=" display: flex; justify-content: space-around;">
+                    <div style="color: black;">Create New account</div>
+                    <div style="margin-left: 10px;"><a routerLink="/register"
+                            style="color:blue;cursor: pointer; ">Register Here</a>
+                    </div>
+
+                </div>
+
+                <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+                    Invalid Username or password
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
